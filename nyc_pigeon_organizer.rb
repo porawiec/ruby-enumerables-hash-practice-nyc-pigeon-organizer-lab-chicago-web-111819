@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
           if pigeon_list[name][cgl]
             pigeon_list[name][cgl].push(specs.to_s)
           else
-            pigeon_list[name][cgl] = specs.to_s
+            pigeon_list[name][cgl] = [specs.to_s]
           end
         else
           pigeon_list[name] = {cgl =>[specs.to_s]}
