@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
   data.each do | cgl, attribute_hash | #using pigeon data - purple, color
     attribute_hash.each do | cgl_2, names_array | #using attribute data - names, purple
       names_array.each do | name | #pull out the names
-        pigeon_list[names][attribute] = cgl_2
+        pigeon_list[names] = cgl_2
       end
     end
   end
