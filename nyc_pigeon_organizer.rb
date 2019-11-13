@@ -5,10 +5,10 @@ def nyc_pigeon_organizer(data)
   pigeon_list = {}
     #unpack from top down - color, gender, lives --> name
     #assign string value "Theo"=> color key iterate through colors
-  data.each do | cgl, attribute | #using pigeon data - purple, color
-    attribute.each do | cgl_2, names | #using attribute data - names, purple
-      names.each do | name | #pull out the names
-        pigeon_list[names] = cgl_2
+  data.each do | cgl, attribute_hash | #using pigeon data - purple, color
+    attribute_hash.each do | cgl_2, names_array | #using attribute data - names, purple
+      names_array.each do | name | #pull out the names
+        pigeon_list[names][attribute] = cgl_2
       end
     end
   end
