@@ -6,5 +6,8 @@ def nyc_pigeon_organizer(data)
     #unpack from top down - color, gender, lives --> name
     #assign string value "Theo"=> color key iterate through colors
   data.each do | cgl, attribute | #using pigeon data - purple, color
-    attribute.each do |  | #using attribute data - names, purple
+    pigeon_list[attribute] = cgl
+    #attribute.each do |  | #using attribute data - names, purple
+    #end
+  end
 end
