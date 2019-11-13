@@ -10,4 +10,5 @@ def nyc_pigeon_organizer(data)
     #attribute.each do |  | #using attribute data - names, purple
     #end
   end
+  p pigeon_list
 end
