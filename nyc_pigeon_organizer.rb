@@ -12,12 +12,12 @@ def nyc_pigeon_organizer(data)
       names_array.each do | name | #pull out the names
         if pigeon_list[name]
           if pigeon_list[name][cgl]
-            pigeon_list[name][cgl].push(specs)
+            pigeon_list[name][cgl].push(specs.to_s)
           else
-            pigeon_list[name][cgl] = specs
+            pigeon_list[name][cgl] = specs.to_s
           end
         else
-          pigeon_list[name] = {cgl =>[specs]}
+          pigeon_list[name] = {cgl =>[specs.to_s]}
         end
       end
     end
